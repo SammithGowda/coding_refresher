@@ -1,0 +1,32 @@
+.main_item_div {
+  /* height: 50px; */
+  display: flex;
+  height: 200px;
+  /* border: 2px solid yellow; */
+  margin: 20px;
+}
+.main_item_div > div {
+  margin: 10px;
+}
+.info_div {
+  width: 200px;
+  /* border: 2px solid red; */
+}
+.rating_div {
+  /* border: 2px solid hotpink; */
+  width: 200px;
+  text-align: center;
+}
+.functions_div {
+  border: 2px solid black;
+  width: 50%;
+}
+.functions_div > button {
+  margin: 5px;
+}
+.functions_div > div {
+  margin: 8px;
+}
+.button_sort > button {
+  margin: 5px;
+}
