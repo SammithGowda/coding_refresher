@@ -1,3 +1,6 @@
+.App {
+  text-align: center;
+}
 .add_div {
   border: 2px solid red;
   height: 100px;
@@ -6,16 +9,14 @@
   margin-top: 50px;
   padding: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add_div > input {
+  margin: 5px;
 }
 .trdiv {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 200px;
   width: 50%;
-  margin: 50px;
+  margin-left: 100px;
 }
 th,
 td {
@@ -25,6 +26,11 @@ td {
 table {
   width: 100%;
 }
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -53,8 +59,4 @@ table {
   to {
     transform: rotate(360deg);
   }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
 }

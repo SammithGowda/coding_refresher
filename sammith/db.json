@@ -1,0 +1,76 @@
+{
+  "Userdata": [
+    {
+      "name": "sammith",
+      "age": "25",
+      "dob": "2022-04-09",
+      "state": "hulathi",
+      "address": "kondnador",
+      "pin": "577422",
+      "id": 1
+    },
+    {
+      "name": "venkat",
+      "age": "25",
+      "dob": "2022-04-20",
+      "state": "bengolore",
+      "address": "jajajinagar",
+      "pin": "577422",
+      "id": 2
+    },
+    {
+      "name": "vittal",
+      "age": "27",
+      "dob": "2022-04-12",
+      "state": "kundapura",
+      "address": "kundapua",
+      "pin": "59565",
+      "id": 3
+    },
+    {
+      "name": "aakh",
+      "age": "hjvhj",
+      "dob": "5264-06-04",
+      "state": "khgbhj",
+      "address": "57\\65",
+      "pin": "685465",
+      "id": 4
+    },
+    {
+      "name": "aakh",
+      "age": "hjvhj",
+      "dob": "5264-06-04",
+      "state": "khgbhj",
+      "address": "57\\65",
+      "pin": "685465",
+      "id": 5
+    },
+    {
+      "name": "aakh",
+      "age": "hjvhj",
+      "dob": "5264-06-04",
+      "state": "khgbhj",
+      "address": "57\\65",
+      "pin": "685465",
+      "id": 6
+    },
+    {
+      "name": "aakh",
+      "age": "hjvhj",
+      "dob": "5264-06-04",
+      "state": "khgbhj",
+      "address": "57\\65",
+      "pin": "685465",
+      "id": 7
+    },
+    {
+      "name": "aakh",
+      "age": "hjvhj",
+      "dob": "5264-06-04",
+      "state": "khgbhj",
+      "address": "57\\65",
+      "pin": "685465",
+      "id": 8
+    }
+  ]
+}
