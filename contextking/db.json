@@ -1,0 +1,31 @@
+{
+  "Userdata": [
+    {
+      "name": "sammith",
+      "age": "25",
+      "dob": "2022-04-09",
+      "state": "hulathi",
+      "address": "kondnador",
+      "pin": "577422",
+      "id": 1
+    },
+    {
+      "name": "venkat",
+      "age": "25",
+      "dob": "2022-04-20",
+      "state": "bengolore",
+      "address": "jajajinagar",
+      "pin": "577422",
+      "id": 2
+    },
+    {
+      "name": "vittal",
+      "age": "27",
+      "dob": "2022-04-12",
+      "state": "kundapura",
+      "address": "kundapua",
+      "pin": "59565",
+      "id": 3
+    }
+  ]
+}
