@@ -4,7 +4,7 @@ import {
   signupFailuer,
   signupfsuccess,
   signupLoading,
-} from "../Redux/Sigup/Action";
+} from "../Redux/Signup/Action";
 import { useNavigate } from "react-router-dom";
 export const Signup = () => {
   const [username, SetUsername] = useState("");
@@ -35,8 +35,9 @@ export const Signup = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        // dispatch(signupfsuccess(res.token));
-        console.log(res.token);
+        dispatch(signupfsuccess());
+        console.log(res.message);
+        // alert("done")
         navigate("/login");
       })
       .catch((err) => dispatch(signupFailuer()));
@@ -46,13 +47,13 @@ export const Signup = () => {
       <h4>Signup form</h4>
       <input
         type="text"
-        placeholder="Enter name"
+        placeholder="Enter username"
         value={username}
         onChange={(e) => SetUsername(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Enter username"
+        placeholder="Enter name"
         value={name}
         onChange={(e) => Setname(e.target.value)}
       />

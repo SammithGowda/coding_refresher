@@ -1,0 +1,68 @@
+.main_container {
+  border: 2px solid red;
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  display: flex;
+}
+
+.prfile {
+  flex: 0.7;
+  border: 2px solid teal;
+}
+.title {
+  flex: 1;
+  border: 2px solid teal;
+}
+.subtask {
+  flex: 1;
+  border: 2px solid teal;
+}
+.date {
+  flex: 1;
+  border: 2px solid teal;
+}
+.input_title {
+  margin: 50px;
+}
+.input_title > input {
+  width: 90%;
+  height: 30px;
+}
+.radio {
+  /* border: 2px solid blue; */
+  width: 60%;
+  margin-left: 50px;
+}
+.radio > input {
+  margin: 10px;
+  color: aqua;
+}
+
+.add_btn_div {
+  display: flex;
+  /* border: 2px solid red; */
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.add_btn_div > div > input {
+  width: 90%;
+  height: 30px;
+}
+.diplay_tasksub > div {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 10px;
+
+  justify-content: space-between;
+}
+.date > div {
+  margin: 50px;
+}
+.date > div > input {
+  width: 90%;
+  height: 30px;
+}
