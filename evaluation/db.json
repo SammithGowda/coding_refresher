@@ -13,17 +13,17 @@
       "id": 3
     },
     {
-      "country": "america",
-      "city": "dc",
-      "population": "70000",
-      "id": 4
-    },
-    {
       "country": "russia",
       "city": "russia",
       "population": "1500",
       "id": 5
     }
   ],
-  "city": {}
+  "city": [
+    {
+      "city": ";kop;o",
+      "population": "7\\",
+      "id": 3
+    }
+  ]
 }

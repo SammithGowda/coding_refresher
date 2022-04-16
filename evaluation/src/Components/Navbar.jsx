@@ -5,6 +5,7 @@ export const Navbar = () => {
     <>
       <Link to="/">Home</Link>
       <Link to="/add_country">Country</Link>
+      <Link to="/add_city">City</Link>
     </>
   );
 };
