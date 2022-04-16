@@ -1,0 +1,29 @@
+{
+  "Country": [
+    {
+      "country": "india",
+      "city": "dehli",
+      "population": "1000",
+      "id": 2
+    },
+    {
+      "country": "america",
+      "city": "newyork",
+      "population": "400",
+      "id": 3
+    },
+    {
+      "country": "america",
+      "city": "dc",
+      "population": "70000",
+      "id": 4
+    },
+    {
+      "country": "russia",
+      "city": "russia",
+      "population": "1500",
+      "id": 5
+    }
+  ],
+  "city": {}
+}
