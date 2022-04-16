@@ -38,6 +38,9 @@ const reducer = (state, { type, payload }) => {
         (el) => el.id !== payload
       );
       return { ...state, subtasck: subtaskafterdelete };
+
+    case "RESET_FORM":
+      return { ...initstate };
     default:
       throw new Error("wrong in locar reducer");
   }
@@ -61,7 +64,9 @@ export const TodoCreate = () => {
       headers: {
         "Content-Type": "application/json",
       },
-    }).then((res) => rduxdispatch(gettododata));
+    })
+      .then((res) => rduxdispatch(gettododata))
+      .then(() => dispatch({ type: "RESET_FORM" }));
   };
 
   useEffect(() => {
@@ -201,6 +206,7 @@ export const TodoCreate = () => {
                   subtaskinput: false,
                 };
                 dispatch({ type: "ADD_SUBTASK", payload });
+                setSubtaskinput("");
               }}
             >
               ADD

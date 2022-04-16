@@ -1,14 +1,17 @@
 import "./Home.css";
 import { useSelector } from "react-redux";
-import { Profile } from "./Profile";
+import { SideBar } from "./Sidebar";
 export const Home = () => {
   const { token, username } = useSelector((state) => state.login);
-  //   console.log(token.token);
+  const { todos } = useSelector((state) => state.todo);
+  // console.log(todos);
   return (
     <div>
       <div className="constianer">
         <div className="grid1">
-          <Profile token={token} username={username} />
+          <div>
+            <SideBar token={token} username={username} todos={todos} />
+          </div>
         </div>
         <div className="grid2">midd</div>
 

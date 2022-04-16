@@ -20,6 +20,7 @@ export const Profile = ({ username, token }) => {
   //   console.log(profile);
   return (
     <div>
+      <h3>Personal Info</h3>
       <p>name:{profile.name}</p>
       <p>email:{profile.email}</p>
       <p>username:{profile.username}</p>
