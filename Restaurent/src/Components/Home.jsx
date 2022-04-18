@@ -262,14 +262,14 @@ export const Home = () => {
             setPage(page - 1);
           }}
         >
-          Pev
+          Next
         </button>
         <button
           onClick={() => {
             setPage(page + 1);
           }}
         >
-          Next
+          pre
         </button>
       </div>
     </>

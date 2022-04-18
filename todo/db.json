@@ -1,89 +1,31 @@
 {
   "Todos": [
     {
-      "title": "uta madu",
-      "description": "uta madoi",
+      "title": "samm",
+      "description": "samm",
       "subtasck": [
         {
-          "id": 0.6999769892868877,
-          "Title": "fshefsf",
-          "subtaskinput": true
+          "id": 0.21712358127356213,
+          "Title": "samm",
+          "subtaskinput": false
+        },
+        {
+          "id": 0.6645226004054225,
+          "Title": "samm",
+          "subtaskinput": false
+        },
+        {
+          "id": 0.3241189492154424,
+          "Title": "samm",
+          "subtaskinput": false
         }
       ],
-      "status": "Todo",
+      "status": "inProgress",
       "tags": {
-        "Other": true
+        "offical": true
       },
-      "date": "2022-04-14",
+      "date": "2022-04-17",
       "id": 1
-    },
-    {
-      "title": "uta madu",
-      "description": "uta madoi",
-      "subtasck": [
-        {
-          "id": 0.6999769892868877,
-          "Title": "fshefsf",
-          "subtaskinput": true
-        }
-      ],
-      "status": "Todo",
-      "tags": {
-        "Other": true
-      },
-      "date": "2022-04-14",
-      "id": 2
-    },
-    {
-      "title": "got rip",
-      "description": "not now",
-      "subtasck": [
-        {
-          "id": 0.741333587689815,
-          "Title": "run fast",
-          "subtaskinput": true
-        }
-      ],
-      "status": "inProgress",
-      "tags": {
-        "Personal": true
-      },
-      "date": "2022-04-13",
-      "id": 3
-    },
-    {
-      "title": "run",
-      "description": "m run",
-      "subtasck": [
-        {
-          "id": 0.013065951501129991,
-          "Title": "drink w",
-          "subtaskinput": false
-        }
-      ],
-      "status": "Todo",
-      "tags": {
-        "Personal": true
-      },
-      "date": "2022-04-14",
-      "id": 4
-    },
-    {
-      "title": "fsd",
-      "description": "zdfdf",
-      "subtasck": [
-        {
-          "id": 0.060876243344141434,
-          "Title": "drgdrgre",
-          "subtaskinput": false
-        }
-      ],
-      "status": "inProgress",
-      "tags": {
-        "Personal": true
-      },
-      "date": "2022-04-08",
-      "id": 5
     }
   ]
 }

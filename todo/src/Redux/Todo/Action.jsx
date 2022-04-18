@@ -15,7 +15,7 @@ export const todoFailuer = () => ({
 
 export const gettododata = () => (dispatch) => {
   dispatch(todoLoading);
-  fetch(" http://localhost:8080/Todos")
+  fetch("http://localhost:8080/Todos")
     .then((res) => res.json())
     .then((res) => dispatch(todosuccess(res)))
     .catch((er) => dispatch(todoFailuer()));
