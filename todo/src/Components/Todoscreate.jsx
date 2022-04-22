@@ -117,6 +117,7 @@ export const TodoCreate = () => {
             }
           />
         </div>
+        {/* radio buton */}
         <div className="radio">
           <input
             type="radio"
