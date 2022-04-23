@@ -10,7 +10,7 @@ export const Navbar = () => {
       }}
     >
       <Link to="/">Home</Link>
-      <Link to="/listing/:id">Entiry</Link>
+
       <Link to="/listing/create">Create Entiry</Link>
     </div>
   );
