@@ -1,0 +1,50 @@
+{
+  "petsdetails": [
+    {
+      "name": "sammith",
+      "city": "blore",
+      "address": "blore",
+      "capacity": "45",
+      "cost_per_day": "3",
+      "verified": "verified",
+      "rating": "3",
+      "subarr": [
+        {
+          "summary": "good",
+          "number_of_pet": "3",
+          "type_of_pet": "dog",
+          "pet_size": "5kg",
+          "potty_breaks": "yes",
+          "walks": "3",
+          "type_home": "home",
+          "outdoor": "large",
+          "emergency": "yes"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "venkat ",
+      "city": "zarkand ",
+      "address": "zarkand",
+      "capacity": "5",
+      "cost_per_day": "2",
+      "verified": "yes",
+      "rating": "3",
+      "subarr": [
+        {
+          "summary": "gooooo",
+          "number_of_pet": "5",
+          "type_of_pet": "cat",
+          "pet_size": "50",
+          "potty_breaks": "yes",
+          "walks": "5",
+          "type_home": "rent",
+          "outdoor": "large",
+          "emergency": "yes"
+        }
+      ],
+      "id": 4
+    }
+  ]
+}
