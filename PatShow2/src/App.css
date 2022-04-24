@@ -90,8 +90,8 @@ td {
   color: whitesmoke;
 }
 
-.sorts_btn {
-  /* border: 2px solid red; */
+.sorts_btn > h1 {
+  text-align: center;
   margin-top: 10px;
 }
 .sorts_btn > button {
