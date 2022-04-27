@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/31c1b9aefb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <div class="navbardiv">
+        <div class="top_most_content">
+          <div id="top_div">
+            <div class="first_main_top_div">
+              <div class="img_div">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1v43fGUnCV01_Ki_K7PbpoE9apotAjcp7WQ&usqp=CAU"
+                  alt=""
+                  width="90px"
+                  height="40px"
+                />
+              </div>
+              <div class="button_div">
+                <button><i class="fa-thin fa-square-plus"></i> New Post</button>
+              </div>
+            </div>
+            <div class="second_main_top_div">
+              <input
+                type="text"
+                placeholder="Images,#tags,@users oh my!"
+                name=""
+                id=""
+              />
+              <p>icon</p>
+            </div>
+            <div class="third_main_top_div">
+              <div></div>
+              <div><button class="bt_one">Go-Ad-Free</button></div>
+              <div><button class="bt_two">Sign in</button></div>
+              <div><button class="bt_three">Sign up</button></div>
+            </div>
+          </div>
+        </div>
+        <!-- text hello text -->
+        <div class="text_div">
+          <h3>Hello, is it Dog you’re looking for?</h3>
+        </div>
+        <!-- varitey div here  -->
+        <div class="varitey_div">
+          <div class="varitey_div_first_div">
+            <div><p>EXPLORE TAGS</p></div>
+            <div>MORE TAGS +</div>
+          </div>
+          <!-- 10 divs -->
+          <div class="box_div">
+            <!-- first div  -->
+            <div class="box_div_one">
+              <div style="background-color: #323d85"></div>
+              <div style="background-color: #4d549a">
+                <p class="ptext">Fishing</p>
+                <p class="ptext">Featured.5,112 Posts</p>
+              </div>
+            </div>
+
+            <!-- second div  -->
+            <div class="box_div_two">
+              <div style="background-color: #854c9d"></div>
+              <div style="background-color: #633875">
+                <p class="ptext">Funny</p>
+                <p class="ptext">2,699,252</p>
+                <p class="ptext">Posts</p>
+              </div>
+            </div>
+            <div class="box_div_two">
+              <div style="background-color: #afcde7"></div>
+              <div style="background-color: #008261">
+                <p class="ptext">Dog</p>
+                <p class="ptext">211,789 Posts</p>
+              </div>
+            </div>
+            <div class="box_div_two">
+              <div style="background-color: #88c9d6"></div>
+              <div style="background-color: #60aebb">
+                <p class="ptext">Aww</p>
+                <p class="ptext">765,208 Posts</p>
+              </div>
+            </div>
+            <div class="box_div_two">
+              <div style="background-color: #cdae8c"></div>
+              <div style="background-color: #ab80b8">
+                <p class="ptext">Oc</p>
+                <p class="ptext">40,000 Posts</p>
+              </div>
+            </div>
+            <div class="box_div_two">
+              <div style="background-color: #ab80b8"></div>
+              <div style="background-color: #ba519f">
+                <p class="ptext">memes</p>
+                <p class="ptext">574,228 Posts</p>
+              </div>
+            </div>
+            <div class="box_div_two">
+              <div style="background-color: #ba519f"></div>
+              <div style="background-color: #2b1a5a">
+                <p class="ptext">Gaming</p>
+                <p class="ptext">298,777 Posts</p>
+              </div>
+            </div>
+            <div class="box_div_two">
+              <div style="background-color: #2b8b9b"></div>
+              <div style="background-color: #132d31">
+                <p class="ptext">Staff Picks</p>
+                <p class="ptext">6,551 Posts</p>
+              </div>
+            </div>
+            <div class="box_div_two">
+              <div style="background-color: #f49293"></div>
+              <div style="background-color: #8472bd">
+                <p class="ptext">Awesome</p>
+                <p class="ptext">753,321 Posts</p>
+              </div>
+            </div>
+            <div class="box_div_two">
+              <div style="background-color: #22252c"></div>
+              <div style="background-color: #e47d57">
+                <p class="ptext">Science and Tech</p>
+                <p class="ptext">405,093Posts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content div -->
+      <div class="content_outrtdiv">
+        <div class="main_content_div">
+          <div>
+            <select name="" id="" class="select_tag">
+              <option value="">MOST VIRAL</option>
+              <option value="">USER SUBMITED</option>
+              <option value="">HIGEST SCORING</option>
+            </select>
+          </div>
+          <div>
+            <select name="" id="" class="select_tag">
+              <option value="">NEWEST</option>
+              <option value="">RISING</option>
+              <option value="">POPULAR</option>
+            </select>
+          </div>
+        </div>
+        <!-- grid content -->
+        <div class="gird_content"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let content = document.querySelector(".gird_content");
+  async function getdata() {
+    try {
+      let res = await fetch("https://dog.ceo/api/breeds/image/random/50");
+      let data = await res.json();
+      let mes = data.message;
+      display(mes);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  getdata();
+
+  let display = (mes) => {
+    mes.map((el) => {
+      let div = document.createElement("div");
+      div.setAttribute("id", "ssss");
+
+      let img = document.createElement("img");
+      img.setAttribute("class", "dimg");
+      img.src = el;
+      div.append(img);
+
+      content.append(div);
+    });
+    window.addEventListener("scroll", () => {
+      // console.log("scrolled", window.scrollY) //scrolled from top
+      // console.log(window.innerHeight) //visible part of screen
+      if (
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight
+      ) {
+        getdata();
+      }
+    });
+  };
+</script>
