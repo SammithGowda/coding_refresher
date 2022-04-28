@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="paste"
+      style="
+        width: 30%;
+        border: 2px solid red;
+        margin: auto;
+        text-align: center;
+      "
+    >
+      <h1>Debounce</h1>
+      <input
+        type="text"
+        oninput="debounce(showtext,1500)"
+        name=""
+        id="enter"
+        placeholder="enter "
+        style="margin: 15px"
+      />
+      <br />
+      <span>Debounce output</span>
+    </div>
+  </body>
+</html>
+<script>
+  let id = 0;
+  let p = document.getElementById("paste");
+  function showtext() {
+    // document.getElementById("paste").innerHTML = "";
+    let entered;
+    entered = document.querySelector("#enter").value;
+    let x = document.createElement("p");
+    x.innerHTML = entered;
+    p.append(x);
+  }
+
+  function debounce(fun, delay) {
+    if (id) {
+      console.log(id);
+      clearTimeout(id);
+    }
+    id = setTimeout(() => {
+      fun();
+    }, delay);
+  }
+</script>
