@@ -1,0 +1,36 @@
+{
+  "Grocery": [
+    {
+      "Title": "Chips",
+      "Price": "420",
+      "Quantity": "5kg ",
+      "Description": "chips aste",
+      "Image": "https://images.unsplash.com/photo-1584473457406-6240486418e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyb2Nlcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 1
+    },
+    {
+      "Title": "Water",
+      "Price": "20",
+      "Quantity": "1 ltr",
+      "Description": "Water",
+      "Image": "https://media.istockphoto.com/photos/glass-of-soda-water-picture-id1005885952?k=20&m=1005885952&s=612x612&w=0&h=aeDM4K_veO7jOLdgiXiLa89cX17tfIjzhSE36M2JILQ=",
+      "id": 3
+    },
+    {
+      "Title": "Laptop",
+      "Price": "45420",
+      "Quantity": "1 ",
+      "Description": "Product",
+      "Image": "https://media.istockphoto.com/photos/laptop-open-against-a-white-background-picture-id178083720?k=20&m=178083720&s=612x612&w=0&h=7P8RMilvEDbRaCKSb121agYwjCqriZkIPUFVew96vWI=",
+      "id": 4
+    },
+    {
+      "Title": "Rotti",
+      "Price": "25",
+      "Quantity": "2",
+      "Description": "Food",
+      "Image": "https://media.istockphoto.com/photos/jowar-roti-or-jowar-bhakri-are-healthy-gluten-free-flatbreads-made-picture-id1339520788?k=20&m=1339520788&s=612x612&w=0&h=_owvIsmc8q3Dz2cpfaLB11SiccMYJE9Eds2FK-98KZ4=",
+      "id": 5
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import res from "express/lib/response";
+
 export class Grocery extends React.Component {
   constructor(props) {
     super(props);
@@ -11,6 +11,7 @@ export class Grocery extends React.Component {
       Itemdescrp: "",
       Itemimg: "",
       Data: [],
+      Page: 1,
     };
     this.handlechangename = this.handlechangename.bind(this);
     this.handlechangeprice = this.handlechangeprice.bind(this);
@@ -20,33 +21,28 @@ export class Grocery extends React.Component {
   }
 
   handlechangename(e) {
-    // console.log(this);
     this.setState({
       Itemname: e.target.value,
     });
   }
 
   handlechangeprice(e) {
-    // console.log(this);
     this.setState({
       Itemprice: e.target.value,
     });
   }
 
   handlechangeqty(e) {
-    // console.log(this);
     this.setState({
       Itemqty: e.target.value,
     });
   }
   handlechangedesc(e) {
-    // console.log(this);
     this.setState({
       Itemdescrp: e.target.value,
     });
   }
   handlechangeimg(e) {
-    // console.log(this);
     this.setState({
       Itemimg: e.target.value,
     });
@@ -62,14 +58,48 @@ export class Grocery extends React.Component {
     };
     axios.post("http://localhost:4444/Grocery", payload).then((res) => {
       alert("done");
+      this.getdata();
     });
   }
   componentDidMount() {
-    axios
-      .get("http://localhost:4444/Grocery")
-      .then((res) => console.log(res.data));
+    this.getdata();
   }
 
+  getdata() {
+    const { Page } = this.state;
+    return axios
+      .get("http://localhost:4444/Grocery", {
+        params: {
+          _limit: 2,
+          _page: Page,
+        },
+      })
+      .then((res) => this.setState({ Data: res.data }));
+  }
+  handledelete(id) {
+    axios
+      .delete(`http://localhost:4444/Grocery/${id}`)
+      .then((res) => this.getdata());
+  }
+
+  handlechnagepage(vale) {
+    this.setState({ Page: this.state.Page + vale });
+  }
+
+  componentDidUpdate(preProps, prevState) {
+    if (prevState.Page !== this.state.Page) {
+      this.getdata();
+    }
+  }
+  // handlepatch(id) {
+  //   let arg = {
+  //     Title: "sammith patch",
+  //     Price: "420",
+  //   };
+  //   axios
+  //     .patch(`http://localhost:4444/Grocery/${id}`, arg)
+  //     .then((res) => this.getdata());
+  // }
   render() {
     const { Itemname, Itemprice, Itemqty, Itemdescrp, Itemimg, Data } =
       this.state;
@@ -109,6 +139,46 @@ export class Grocery extends React.Component {
             placeholder="Add image"
           />
           <button onClick={this.handlechnageadd.bind(this)}>ADD</button>
+        </div>
+        <div className="item_div">
+          <table width={"100%"}>
+            <thead>
+              <tr>
+                <td>Name </td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Description</td>
+                <td>Image</td>
+                <td>Delete</td>
+              </tr>
+            </thead>
+            <tbody>
+              {Data.map((el) => (
+                <tr key={el.id}>
+                  <td>{el.Title}</td>
+                  <td>{el.Price} </td>
+                  <td>{el.Quantity} </td>
+                  <td>{el.Description} </td>
+                  <td>
+                    {" "}
+                    <img src={el.Image} alt="" width={"50%"} height={"100px"} />
+                  </td>
+                  <td>
+                    <button onClick={() => this.handledelete(el.id)}>
+                      Delete
+                    </button>
+                  </td>
+                  {/* <td>
+                    <button onClick={() => this.handlepatch(el.id)}>
+                      Patch
+                    </button>
+                  </td> */}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <button onClick={() => this.handlechnagepage(-1)}>Pre</button>
+          <button onClick={() => this.handlechnagepage(1)}>Next</button>
         </div>
       </div>
     );
